@@ -1,4 +1,3 @@
-
 {
   "intents": [
     {
@@ -630,14 +629,6 @@
       "previous_sibling": "slot_8_1597634543923"
     },
     {
-      "type": "slot",
-      "output": {},
-      "parent": "node_1_1597634543916",
-      "variable": "$Action",
-      "dialog_node": "slot_8_1597634543923",
-      "previous_sibling": "response_11_1597634543923"
-    },
-    {
       "type": "standard",
       "parent": "node_1_1597634543916",
       "metadata": {
@@ -646,7 +637,35 @@
         }
       },
       "conditions": "@Afirmacion",
-      "dialog_node": "node_1_1597712391610"
+      "dialog_node": "node_1_1597712391610",
+      "previous_sibling": "handler_1_1597720997873"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1597634543916",
+      "variable": "$Action",
+      "dialog_node": "slot_8_1597634543923",
+      "previous_sibling": "response_11_1597634543923"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, ¿Que tipo de solicitud quiere hacer?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597634543916",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1597720997873"
     },
     {
       "type": "standard",
