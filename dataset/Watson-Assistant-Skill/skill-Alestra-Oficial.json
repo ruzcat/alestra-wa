@@ -155,16 +155,17 @@
             "ver",
             "seccion",
             "modulo",
-            "acceder"
+            "acceder",
+            "acceso"
           ]
         },
         {
           "type": "synonyms",
-          "value": "change",
+          "value": "add",
           "synonyms": [
-            "modificacion",
-            "cambiar",
-            "modificar"
+            "añadir",
+            "nuevo",
+            "agregar"
           ]
         },
         {
@@ -174,17 +175,17 @@
             "quitar",
             "destruir",
             "eliminar",
-            "borrar"
+            "borrar",
+            "alta"
           ]
         },
         {
           "type": "synonyms",
-          "value": "add",
+          "value": "change",
           "synonyms": [
-            "añadir",
-            "nuevo",
-            "alta",
-            "agregar"
+            "modificacion",
+            "cambiar",
+            "modificar"
           ]
         }
       ]
@@ -218,25 +219,10 @@
       "values": [
         {
           "type": "synonyms",
-          "value": "error sistema",
+          "value": "licencia",
           "synonyms": [
-            "fallando",
-            "dejo de funcionar",
-            "no funciona",
-            "reportar",
-            "falla",
-            "problemas",
-            "error de usuario",
-            "cierra",
-            "no abre"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "privilegio",
-          "synonyms": [
-            "no puedo entrar",
-            "poder ver"
+            "activation key",
+            "licence key"
           ]
         },
         {
@@ -250,19 +236,34 @@
         },
         {
           "type": "synonyms",
-          "value": "licencia",
-          "synonyms": [
-            "activation key",
-            "licence key"
-          ]
-        },
-        {
-          "type": "synonyms",
           "value": "login",
           "synonyms": [
             "autenticar",
             "autenticacion",
             "inicio de sesion"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "privilegio",
+          "synonyms": [
+            "no puedo entrar",
+            "poder ver"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "error sistema",
+          "synonyms": [
+            "fallando",
+            "dejo de funcionar",
+            "no funciona",
+            "reportar",
+            "falla",
+            "problemas",
+            "error de usuario",
+            "cierra",
+            "no abre"
           ]
         }
       ]
@@ -270,6 +271,33 @@
     {
       "entity": "application",
       "values": [
+        {
+          "type": "synonyms",
+          "value": "All",
+          "synonyms": [
+            "todas las aplicaciones",
+            "todas las apps"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Portal",
+          "synonyms": [
+            "portal interno",
+            "intranet",
+            "portal de empleados"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "SAP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Siebel",
+          "synonyms": []
+        },
         {
           "type": "synonyms",
           "value": "Pega",
@@ -293,33 +321,6 @@
             "outlook",
             "correo"
           ]
-        },
-        {
-          "type": "synonyms",
-          "value": "Portal",
-          "synonyms": [
-            "portal interno",
-            "intranet",
-            "portal de empleados"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "SAP",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "All",
-          "synonyms": [
-            "todas las aplicaciones",
-            "todas las apps"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "Siebel",
-          "synonyms": []
         }
       ]
     },
@@ -328,15 +329,15 @@
       "values": [
         {
           "type": "synonyms",
+          "value": "No",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
           "value": "Si",
           "synonyms": [
             "claro"
           ]
-        },
-        {
-          "type": "synonyms",
-          "value": "No",
-          "synonyms": []
         }
       ]
     }
