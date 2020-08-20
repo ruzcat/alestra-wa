@@ -140,6 +140,9 @@
         },
         {
           "text": "eso es todo"
+        },
+        {
+          "text": "en nada"
         }
       ]
     }
@@ -148,26 +151,6 @@
     {
       "entity": "request",
       "values": [
-        {
-          "type": "synonyms",
-          "value": "access",
-          "synonyms": [
-            "ver",
-            "seccion",
-            "modulo",
-            "acceder",
-            "acceso"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "add",
-          "synonyms": [
-            "añadir",
-            "nuevo",
-            "agregar"
-          ]
-        },
         {
           "type": "synonyms",
           "value": "delete",
@@ -181,34 +164,54 @@
         },
         {
           "type": "synonyms",
-          "value": "change",
+          "value": "access",
           "synonyms": [
-            "modificacion",
-            "cambiar",
-            "modificar"
-          ]
-        }
-      ]
-    },
-    {
-      "entity": "Confirmacion",
-      "values": [
-        {
-          "type": "synonyms",
-          "value": "no",
-          "synonyms": [
-            "not",
-            "dont"
+            "ver",
+            "acceder",
+            "acceso",
+            "entrar",
+            "poder ver",
+            "tener",
+            "permisos",
+            "permiso"
           ]
         },
         {
           "type": "synonyms",
-          "value": "si",
+          "value": "change",
           "synonyms": [
-            "si",
-            "yes",
-            "claro",
-            "por supuesto"
+            "modificacion",
+            "cambiar",
+            "modificar",
+            "actualizar",
+            "update"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "add",
+          "synonyms": [
+            "añadir",
+            "nuevo",
+            "agregar",
+            "nueva"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "section",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "seccion",
+          "synonyms": [
+            "modulo",
+            "pestaña",
+            "menu",
+            "opcion",
+            "seccion"
           ]
         }
       ],
@@ -219,6 +222,25 @@
       "values": [
         {
           "type": "synonyms",
+          "value": "crash",
+          "synonyms": [
+            "no abre la aplicacion",
+            "la app truena",
+            "se cierra la app",
+            "crashea"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "privilegio",
+          "synonyms": [
+            "no puedo entrar",
+            "no puedo ver",
+            "no me deja entrar"
+          ]
+        },
+        {
+          "type": "synonyms",
           "value": "licencia",
           "synonyms": [
             "activation key",
@@ -227,28 +249,14 @@
         },
         {
           "type": "synonyms",
-          "value": "crash",
-          "synonyms": [
-            "no abre la aplicacion",
-            "la app truena",
-            "se cierra la app"
-          ]
-        },
-        {
-          "type": "synonyms",
           "value": "login",
           "synonyms": [
             "autenticar",
             "autenticacion",
-            "inicio de sesion"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "privilegio",
-          "synonyms": [
-            "no puedo entrar",
-            "poder ver"
+            "inicio de sesion",
+            "iniciar sesion",
+            "logeo",
+            "identificacion"
           ]
         },
         {
@@ -263,14 +271,21 @@
             "problemas",
             "error de usuario",
             "cierra",
-            "no abre"
+            "no abre",
+            "no responde"
           ]
         }
-      ]
+      ],
+      "fuzzy_match": true
     },
     {
       "entity": "application",
       "values": [
+        {
+          "type": "synonyms",
+          "value": "SAP",
+          "synonyms": []
+        },
         {
           "type": "synonyms",
           "value": "All",
@@ -281,30 +296,8 @@
         },
         {
           "type": "synonyms",
-          "value": "Portal",
-          "synonyms": [
-            "portal interno",
-            "intranet",
-            "portal de empleados"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "SAP",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
           "value": "Siebel",
           "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "Pega",
-          "synonyms": [
-            "Nuevo CRM",
-            "pega"
-          ]
         },
         {
           "type": "synonyms",
@@ -321,6 +314,23 @@
             "outlook",
             "correo"
           ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Portal",
+          "synonyms": [
+            "portal interno",
+            "intranet",
+            "portal de empleados"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pega",
+          "synonyms": [
+            "Nuevo CRM",
+            "pega"
+          ]
         }
       ]
     },
@@ -329,17 +339,40 @@
       "values": [
         {
           "type": "synonyms",
-          "value": "No",
-          "synonyms": []
+          "value": "Si",
+          "synonyms": [
+            "claro",
+            "por supuesto",
+            "ok",
+            "perfecto"
+          ]
         },
         {
           "type": "synonyms",
-          "value": "Si",
+          "value": "No",
           "synonyms": [
-            "claro"
+            "not",
+            "dont",
+            "don't"
           ]
         }
-      ]
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "account",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "usuario",
+          "synonyms": [
+            "cuenta",
+            "account",
+            "user"
+          ]
+        }
+      ],
+      "fuzzy_match": true
     }
   ],
   "metadata": {
@@ -350,13 +383,25 @@
   },
   "dialog_nodes": [
     {
-      "type": "response_condition",
+      "type": "standard",
+      "output": {},
+      "parent": "node_11_1597888293060",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Afirmacion",
+      "dialog_node": "node_12_1597888293060"
+    },
+    {
+      "type": "standard",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Acceso al reporte concedido correctamente, para visualizarlo visite el enlace <a href=\"https://www.alestra.mx/\" target=\"_blank\">Reporte</a>. ¿Desea alguna otra ayuda?"
+                "text": "Ok, Su solicitud eliminar acceso al modulo $Target en la aplicación <? $Application ?> sera realizada en las próximas horas. El número de seguimiento es: <?new Random().nextInt(1000)?>.  ¿Desea acceso a un reporte?"
               }
             ],
             "response_type": "text",
@@ -364,10 +409,60 @@
           }
         ]
       },
-      "parent": "node_1_1597712391610",
-      "conditions": "@Afirmacion:Si",
-      "dialog_node": "response_5_1597712425686",
-      "previous_sibling": "response_6_1597712406439"
+      "parent": "node_18_1597889372605",
+      "context": {
+        "Application": "<?input.text?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_19_1597889372605"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, Su solicitud eliminar acceso al usuario $Target en la aplicación <? $Application ?> sera realizada en las próximas horas. El número de seguimiento es: <?new Random().nextInt(1000)?>.  ¿Desea acceso a un reporte?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1597893056051",
+      "context": {
+        "Application": "<?input.text?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_3_1597893056051"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "¿Que tipo de accion quieres realizar en la aplicacion $Application?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1597891649541",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1597891649565",
+      "previous_sibling": "handler_10_1597891649565"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1597891649541",
+      "context": {
+        "Action": "@request"
+      },
+      "conditions": "@request",
+      "event_name": "input",
+      "dialog_node": "handler_10_1597891649565"
     },
     {
       "type": "response_condition",
@@ -376,7 +471,7 @@
           {
             "values": [
               {
-                "text": "Ok, ¿en que lo podemos seguir ayudando?"
+                "text": "Acceso al reporte fue concedido correctamente, para visualizarlo visite el enlace <a href=\"https://www.alestra.mx/\" target=\"_blank\">Reporte</a>.  ¿Desea alguna otra ayuda?<? context.clear() ?>"
               }
             ],
             "response_type": "text",
@@ -384,9 +479,242 @@
           }
         ]
       },
-      "parent": "node_1_1597712391610",
+      "parent": "node_20_1597889372605",
+      "conditions": "@Afirmacion:Si",
+      "dialog_node": "response_22_1597889372605",
+      "previous_sibling": "response_21_1597889372605"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, ¿en que lo podemos seguir ayudando? <? context.clear() ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_20_1597889372605",
       "conditions": "@Afirmacion:No",
-      "dialog_node": "response_6_1597712406439"
+      "dialog_node": "response_21_1597889372605"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Acceso al reporte fue concedido correctamente, para visualizarlo visite el enlace <a href=\"https://www.alestra.mx/\" target=\"_blank\">Reporte</a>.  ¿Desea alguna otra ayuda?<? context.clear() ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1597893056051",
+      "conditions": "@Afirmacion:Si",
+      "dialog_node": "response_6_1597893056051",
+      "previous_sibling": "response_5_1597893056051"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, ¿en que lo podemos seguir ayudando?<? context.clear() ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1597893056051",
+      "conditions": "@Afirmacion:No",
+      "dialog_node": "response_5_1597893056051"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Acceso al reporte fue concedido correctamente, para visualizarlo visite el enlace <a href=\"https://www.alestra.mx/\" target=\"_blank\">Reporte</a>.  ¿Desea alguna otra ayuda?<? context.clear() ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1597891946094",
+      "conditions": "@Afirmacion:Si",
+      "dialog_node": "response_1_1597892031771",
+      "previous_sibling": "response_5_1597891971966"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, ¿en que lo podemos seguir ayudando? <? context.clear() ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1597891946094",
+      "conditions": "@Afirmacion:No",
+      "dialog_node": "response_5_1597891971966"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "parent": "node_3_1597888226479",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Afirmacion",
+      "dialog_node": "node_4_1597888226479"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Acceso al reporte fue concedido correctamente, para visualizarlo visite el enlace <a href=\"https://www.alestra.mx/\" target=\"_blank\">Reporte</a>.  ¿Desea alguna otra ayuda?<? context.clear() ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597888140940",
+      "conditions": "@Afirmacion:Si",
+      "dialog_node": "response_4_1597888181091",
+      "previous_sibling": "response_7_1597888151262"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, ¿en que lo podemos seguir ayudando?<? context.clear() ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597888140940",
+      "conditions": "@Afirmacion:No",
+      "dialog_node": "response_7_1597888151262"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1597891631860",
+      "variable": "$Application",
+      "dialog_node": "slot_9_1597891682474",
+      "previous_sibling": "slot_6_1597891649541"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, ¿Que tipo de solicitud quiere realizar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597891631860",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1597891649048",
+      "previous_sibling": "node_8_1597891946094"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1597891631860",
+      "variable": "$Action",
+      "dialog_node": "slot_6_1597891649541",
+      "previous_sibling": "handler_1_1597891649048"
+    },
+    {
+      "type": "standard",
+      "parent": "node_1_1597891631860",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Afirmacion",
+      "dialog_node": "node_8_1597891946094"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Acceso al reporte fue concedido correctamente, para visualizarlo visite el enlace <a href=\"https://www.alestra.mx/\" target=\"_blank\">Reporte</a>.  ¿Desea alguna otra ayuda?<? context.clear() ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1597888293060",
+      "conditions": "@Afirmacion:Si",
+      "dialog_node": "response_14_1597888293060",
+      "previous_sibling": "response_13_1597888293060"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, ¿en que lo podemos seguir ayudando?<? context.clear() ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1597888293060",
+      "conditions": "@Afirmacion:No",
+      "dialog_node": "response_13_1597888293060"
     },
     {
       "type": "standard",
@@ -411,56 +739,38 @@
       "dialog_node": "node_3_1597633997612"
     },
     {
-      "type": "event_handler",
+      "type": "standard",
       "output": {
-        "text": {
-          "values": [
-            "¿Que tipo de accion quieres realizar en la aplicacion $Application?"
-          ],
-          "selection_policy": "sequential"
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, Su solicitud cambiar $Target en la aplicación <? $Application ?> sera realizada en las próximas horas. El número de seguimiento es: <?new Random().nextInt(1000)?>.  ¿Desea acceso a un reporte?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1597888293060",
+      "context": {
+        "Application": "<?input.text?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_11_1597888293060"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "parent": "node_3_1597893056051",
+      "metadata": {
+        "_customization": {
+          "mcr": true
         }
       },
-      "parent": "slot_8_1597634543923",
-      "event_name": "focus",
-      "dialog_node": "handler_10_1597634543923",
-      "previous_sibling": "handler_9_1597634543923"
-    },
-    {
-      "type": "event_handler",
-      "output": {},
-      "parent": "slot_8_1597634543923",
-      "context": {
-        "Action": "@request"
-      },
-      "conditions": "@request",
-      "event_name": "input",
-      "dialog_node": "handler_9_1597634543923"
-    },
-    {
-      "type": "event_handler",
-      "output": {
-        "text": {
-          "values": [
-            "¿En cuál aplicación necesita realizar la accion $Action?"
-          ],
-          "selection_policy": "sequential"
-        }
-      },
-      "parent": "slot_5_1597634543923",
-      "event_name": "focus",
-      "dialog_node": "handler_7_1597634543923",
-      "previous_sibling": "handler_6_1597634543923"
-    },
-    {
-      "type": "event_handler",
-      "output": {},
-      "parent": "slot_5_1597634543923",
-      "context": {
-        "Application": "@application"
-      },
-      "conditions": "@application",
-      "event_name": "input",
-      "dialog_node": "handler_6_1597634543923"
+      "conditions": "@Afirmacion",
+      "dialog_node": "node_4_1597893056051"
     },
     {
       "type": "standard",
@@ -516,7 +826,7 @@
           {
             "values": [
               {
-                "text": "Ok, ¿en que lo podemos seguir ayudando?"
+                "text": "Ok, ¿en que lo podemos seguir ayudando? <? context.clear() ?>"
               }
             ],
             "response_type": "text",
@@ -536,7 +846,7 @@
           {
             "values": [
               {
-                "text": "Acceso al reporte fue concedido correctamente, para visualizarlo visite el enlace <a href=\"https://www.alestra.mx/\" target=\"_blank\">Reporte</a>.  ¿Desea alguna otra ayuda?"
+                "text": "Acceso al reporte fue concedido correctamente, para visualizarlo visite el enlace <a href=\"https://www.alestra.mx/\" target=\"_blank\">Reporte</a>.  ¿Desea alguna otra ayuda?<? context.clear() ?>"
               }
             ],
             "response_type": "text",
@@ -547,6 +857,165 @@
       "parent": "node_7_1596837653731",
       "conditions": "@Afirmacion:Si",
       "dialog_node": "response_8_1596837677611"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿En cual aplicación desea quitar el acceso <? $Target ?>?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597893056040",
+      "context": {
+        "Target": "<?input.text?>"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_2_1597893056051",
+      "previous_sibling": "handler_7_1597893056051"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor ingrese la aplicación"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597893056040",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1597893056051",
+      "previous_sibling": "response_8_1597893056051"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿Cual es el usuario?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597893056040",
+      "context": {},
+      "conditions": "@account:usuario",
+      "dialog_node": "response_8_1597893056051"
+    },
+    {
+      "type": "standard",
+      "parent": "node_3_1597887868756",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Afirmacion",
+      "dialog_node": "node_1_1597888140940"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "parent": "node_19_1597889372605",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Afirmacion",
+      "dialog_node": "node_20_1597889372605"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor ingrese la aplicación"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1597888293049",
+      "event_name": "focus",
+      "dialog_node": "handler_15_1597888293060",
+      "previous_sibling": "response_16_1597888293060"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿En cual aplicación desea cambiar el usuario <? $Target ?>?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1597888293049",
+      "context": {
+        "Target": "<?input.text?>"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_10_1597888293060",
+      "previous_sibling": "handler_15_1597888293060"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿Cual es el usuario?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1597888293049",
+      "context": {},
+      "conditions": "@account:usuario",
+      "dialog_node": "response_16_1597888293060"
     },
     {
       "type": "event_handler",
@@ -579,7 +1048,7 @@
       "output": {
         "text": {
           "values": [
-            "¿Que tipo de problema estas enfrentando la aplicacion $Aplication?"
+            "¿Que tipo de problema estas enfrentando la aplicacion $Application?"
           ],
           "selection_policy": "sequential"
         }
@@ -601,13 +1070,13 @@
       "dialog_node": "handler_3_1596837532527"
     },
     {
-      "type": "response_condition",
+      "type": "standard",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Tu problema es <? $problem ?> en <? $application ?>, y solicita acceso al report.  ¿Deseas crear un reporte?"
+                "text": "Ok, Su solicitud eliminar $Target en la aplicación <? $Application ?> sera realizada en las próximas horas. El número de seguimiento es: <?new Random().nextInt(1000)?>.  ¿Desea acceso a un reporte?"
               }
             ],
             "response_type": "text",
@@ -615,39 +1084,88 @@
           }
         ]
       },
-      "parent": "node_1_1597634543916",
-      "disabled": true,
-      "conditions": "",
-      "dialog_node": "response_11_1597634543923",
-      "previous_sibling": "node_1_1597712391610"
+      "parent": "node_2_1597888226479",
+      "context": {
+        "Application": "<?input.text?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_3_1597888226479"
     },
     {
-      "type": "slot",
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "¿En cuál aplicación necesita realizar la accion $Action?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1597891682474",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1597891682481",
+      "previous_sibling": "handler_10_1597891682481"
+    },
+    {
+      "type": "event_handler",
       "output": {},
-      "parent": "node_1_1597634543916",
-      "variable": "$Application",
-      "dialog_node": "slot_5_1597634543923",
-      "previous_sibling": "slot_8_1597634543923"
+      "parent": "slot_9_1597891682474",
+      "context": {
+        "Application": "@application"
+      },
+      "conditions": "@application",
+      "event_name": "input",
+      "dialog_node": "handler_10_1597891682481"
     },
     {
       "type": "standard",
-      "parent": "node_1_1597634543916",
-      "metadata": {
-        "_customization": {
-          "mcr": true
-        }
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, Su solicitud agregar $Target en la aplicación <? $Application ?> sera realizada en las próximas horas. El número de seguimiento es: <?new Random().nextInt(1000)?>.  ¿Desea acceso a un reporte?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
       },
-      "conditions": "@Afirmacion",
-      "dialog_node": "node_1_1597712391610",
-      "previous_sibling": "handler_1_1597720997873"
+      "parent": "node_7_1597883686877",
+      "context": {
+        "Application": "<?input.text?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_3_1597887868756"
     },
     {
-      "type": "slot",
-      "output": {},
-      "parent": "node_1_1597634543916",
-      "variable": "$Action",
-      "dialog_node": "slot_8_1597634543923",
-      "previous_sibling": "response_11_1597634543923"
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿En cual aplicación desea borrar el modulo <? $Target ?>?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1597889372595",
+      "context": {
+        "Target": "<?input.text?>"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_18_1597889372605",
+      "previous_sibling": "handler_23_1597889372605"
     },
     {
       "type": "event_handler",
@@ -656,7 +1174,7 @@
           {
             "values": [
               {
-                "text": "Ok, ¿Que tipo de solicitud quiere hacer?"
+                "text": "Por favor ingrese la aplicación"
               }
             ],
             "response_type": "text",
@@ -664,9 +1182,205 @@
           }
         ]
       },
-      "parent": "node_1_1597634543916",
+      "parent": "node_17_1597889372595",
       "event_name": "focus",
-      "dialog_node": "handler_1_1597720997873"
+      "dialog_node": "handler_23_1597889372605",
+      "previous_sibling": "response_24_1597889372605"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿Cual es el Modulo o Sección?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1597889372595",
+      "context": {},
+      "conditions": "@account:usuario",
+      "dialog_node": "response_24_1597889372605"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Acceso al reporte fue concedido correctamente, para visualizarlo visite el enlace <a href=\"https://www.alestra.mx/\" target=\"_blank\">Reporte</a>.  ¿Desea alguna otra ayuda? <? context.clear() ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1597888226479",
+      "conditions": "@Afirmacion:Si",
+      "dialog_node": "response_6_1597888226479",
+      "previous_sibling": "response_5_1597888226479"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, ¿en que lo podemos seguir ayudando? <? context.clear() ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1597888226479",
+      "conditions": "@Afirmacion:No",
+      "dialog_node": "response_5_1597888226479"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿En cual aplicación desea agregar el usuario <? $Target ?>?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1597883320578",
+      "context": {
+        "Target": "<?input.text?>"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_7_1597883686877",
+      "previous_sibling": "handler_1_1597885714128"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor ingrese la aplicación"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1597883320578",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1597885714128",
+      "previous_sibling": "response_2_1597886939439"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿Cual es el usuario?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1597883320578",
+      "context": {},
+      "conditions": "@account:usuario",
+      "dialog_node": "response_2_1597886939439"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿En cual aplicación desea eliminar el usuario <? $Target ?>?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597888226467",
+      "context": {
+        "Target": "<?input.text?>"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_2_1597888226479",
+      "previous_sibling": "handler_7_1597888226479"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor ingrese la aplicación"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597888226467",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1597888226479",
+      "previous_sibling": "response_8_1597888226479"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿Cual es el usuario?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597888226467",
+      "context": {},
+      "conditions": "@account:usuario",
+      "dialog_node": "response_8_1597888226479"
     },
     {
       "type": "standard",
@@ -694,7 +1408,7 @@
           {
             "values": [
               {
-                "text": "Solicitud <? $Action ?> para la aplicación <? $Application ?> fue realizada con éxito bajo el número:<?new Random().nextInt(1000)?>.  ¿Desea acceso a un reporte?"
+                "text": "Tu problema <? $Problem ?> en la aplicación <? $Application ?> fue reportado exitosamente con el número <?new Random().nextInt(1000)?>.  ¿Desea acceso a un reporte?"
               }
             ],
             "response_type": "text",
@@ -707,9 +1421,19 @@
           "mcr": false
         }
       },
-      "conditions": "#Request",
-      "digress_in": "does_not_return",
-      "dialog_node": "node_1_1597634543916",
+      "conditions": "#Problem_report",
+      "dialog_node": "node_5_1596837496528",
+      "previous_sibling": "node_1_1597891631860"
+    },
+    {
+      "type": "standard",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Request && @request:add && @account:usuario",
+      "dialog_node": "node_2_1597883320578",
       "previous_sibling": "node_6_1597633722467"
     },
     {
@@ -730,6 +1454,30 @@
       "conditions": "#Adios",
       "dialog_node": "node_5_1597634327213",
       "previous_sibling": "node_5_1596837496528"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Request && @request:delete && @account:usuario",
+      "dialog_node": "node_1_1597888226467",
+      "previous_sibling": "node_1_1597893056040"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Request && @section:section && @request:delete",
+      "dialog_node": "node_17_1597889372595",
+      "previous_sibling": "node_9_1597888293049"
     },
     {
       "type": "standard",
@@ -765,7 +1513,7 @@
           {
             "values": [
               {
-                "text": "Tu problema <? $Problem ?> en la aplicación <? $Application ?> fue reportado exitosamente con el número <?new Random().nextInt(1000)?>.  ¿Desea acceso a un reporte?"
+                "text": "Tu solicitud $Action para la aplicación $Application sera realizada en las próximas horas. El número de seguimiento es: <?new Random().nextInt(1000)?>.  ¿Desea acceso a un reporte?"
               }
             ],
             "response_type": "text",
@@ -773,14 +1521,34 @@
           }
         ]
       },
+      "conditions": "#Request",
+      "dialog_node": "node_1_1597891631860",
+      "previous_sibling": "node_17_1597889372595"
+    },
+    {
+      "type": "standard",
+      "output": {},
       "metadata": {
         "_customization": {
-          "mcr": false
+          "mcr": true
         }
       },
-      "conditions": "#Problem_report",
-      "dialog_node": "node_5_1596837496528",
-      "previous_sibling": "node_1_1597634543916"
+      "conditions": "#Request && @request:delete && @request:access && @account",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1597893056040",
+      "previous_sibling": "node_2_1597883320578"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Request && @request:change && @account:usuario",
+      "dialog_node": "node_9_1597888293049",
+      "previous_sibling": "node_1_1597888226467"
     },
     {
       "type": "standard",
@@ -807,10 +1575,16 @@
       "text": "Agregar"
     },
     {
+      "text": "Pega"
+    },
+    {
       "text": "SAP"
     },
     {
       "text": "si"
+    },
+    {
+      "text": "web"
     }
   ],
   "system_settings": {
